@@ -1,6 +1,7 @@
-# powershell_useful_scripts
+# Powershell Useful Scripts
 
 ## PowerShell remote management
+Thanks to [this article](https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/) from where I've got these commands from.
 
 ### To invoke powershell cmds on remote machines
 ```
@@ -34,4 +35,4 @@ ForEach ($Computer in $RemoteComputers)
          }
 }
 ```
-Thanks to [this article](https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/) from where I've got these commands from.
+
