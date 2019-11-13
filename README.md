@@ -6,3 +6,32 @@
 ```
 Invoke-Command -Computername $RemoteComputer -ScriptBlock { Get-ChildItem "C:\Program Files" }
 ```
+
+### To invoke powershell cmds on multiple remote machines
+```
+Invoke-Command -ComputerName PC1,PC2,PC3 -FilePath C:\myFolder\myScript.ps1
+```
+
+### Test commection first & invoke powershell cmds on multiple remote machines
+```
+If (Test-Connection -ComputerName $RemoteComputers -Quiet)
+{
+     Invoke-Command -ComputerName $RemoteComputers -ScriptBlock {Get-ChildItem “C:\Program Files”}
+}
+```
+```
+# If invoke fails, failed computer will be added to a txt file
+$RemoteComputers = @("PC1","PC2")
+ForEach ($Computer in $RemoteComputers)
+{
+     Try
+         {
+             Invoke-Command -ComputerName $Computer -ScriptBlock {Get-ChildItem "C:\Program Files"} -ErrorAction Stop
+         }
+     Catch
+         {
+             Add-Content Unavailable-Computers.txt $Computer
+         }
+}
+```
+Thanks to [this article](https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/). See [this reference] (https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/) for better understanding.
