@@ -34,4 +34,5 @@ ForEach ($Computer in $RemoteComputers)
          }
 }
 ```
-Thanks to [this article](https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/). See [this reference] (https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/) for better understanding.
+Thanks to [this article](https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/). 
+See [this reference] for better understanding (https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/) .
