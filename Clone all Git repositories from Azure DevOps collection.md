@@ -1,5 +1,7 @@
 # Script to clone all Git repositories from your Azure DevOps collection
 
+Thanks to [this blog](https://blog.rsuter.com/script-to-clone-all-git-repositories-from-your-vsts-collection/) from where I've got these commands from.
+
 ## 1. Create a new PowerShell script file
 In the directory where you want to clone all repositories, create a new CloneAllRepos.ps1 script file with the following contents:
 ```
