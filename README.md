@@ -9,6 +9,16 @@ or
 ```
 $PSVersionTable
 ```
+### Get Hostory
+```
+$Get-History
+```
+or
+```
+# to not show the repetitive commands inside your command history
+$Get-History | Get-Unique 
+```
+
 ### Command output / Console / log a string 
 ```
 Write-Host ("Hello-World")
