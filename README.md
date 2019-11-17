@@ -1,6 +1,6 @@
 # Powershell Useful Scripts
 
-## PowerShell remote management
+## PowerShell Frequently useful commands
 ### Get PowerShell Version
 ```
 Get-Host | Select-Object Version
@@ -8,6 +8,15 @@ Get-Host | Select-Object Version
 or
 ```
 $PSVersionTable
+```
+### Command output / Console / log a string 
+```
+Write-Host ("Hello-World")
+```
+
+### Command output / Console / log in a new line 
+```
+Write-Host ("Hello `n World")
 ```
 
 ## PowerShell remote management
