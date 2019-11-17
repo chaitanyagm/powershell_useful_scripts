@@ -41,6 +41,11 @@ Get-ChildItem dir\path\Where\a\file\to\be\found -Recurse *expression to match* -
 
 ### Get all the properties of a matched Folder / File 
 ```
+Get-ChildItem pathOfTheFile -Recurse *expression to match* | Format-List * -force
+```
+
+### Find all available options of a Folder / File 
+```
 Get-ChildItem pathOfTheFile -Recurse *expression to match* | Get-Member
 ```
 
