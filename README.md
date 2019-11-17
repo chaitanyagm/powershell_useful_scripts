@@ -1,4 +1,4 @@
-# Powershell Useful Scripts
+# Powershell Useful Commands
 
 ## PowerShell Frequently useful commands
 ### Get PowerShell Version
