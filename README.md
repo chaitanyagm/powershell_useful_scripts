@@ -19,12 +19,12 @@ Write-Host ("Hello-World")
 Write-Host ("Hello `n World")
 ```
 
-### Search for a Folder / File inside a dir 
+### Search for a Folder inside a dir 
 ```
 Get-ChildItem dir\path\Where\a\file\to\be\found -Filter *matchingPattern* -Directory
 ```
 
-### Search to get matched Folder / File inside a dir & its sub dir 
+### Search to get matched Folder inside a dir & its sub dir 
 ```
 Get-ChildItem dir\path\Where\a\file\to\be\found -Recurse *expression to match* -Directory
 ```
