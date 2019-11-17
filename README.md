@@ -19,6 +19,28 @@ Write-Host ("Hello-World")
 Write-Host ("Hello `n World")
 ```
 
+### Search for a Folder / File inside a dir 
+```
+Get-ChildItem dir\path\Where\a\file\to\be\found -Filter *matchingPattern* -Directory
+```
+
+### Search to get matched Folder / File inside a dir & its sub dir 
+```
+Get-ChildItem dir\path\Where\a\file\to\be\found -Recurse *expression to match* -Directory
+```
+
+### Get all the properties of a matched Folder / File 
+```
+Get-ChildItem pathOfTheFile -Recurse *expression to match* | Get-Member
+```
+
+### To get one of the properties EG: FullName of a matched Folder / File 
+```
+(Get-ChildItem pathOfTheFile -Filter *expression to match**).FullName 
+```
+
+##
+##
 ## PowerShell remote management
 Thanks to [this article](https://4sysops.com/archives/use-powershell-invoke-command-to-run-scripts-on-remote-computers/) from where I've got these commands from.
 
