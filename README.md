@@ -9,7 +9,7 @@ or
 ```
 $PSVersionTable
 ```
-### Get Hostory
+### Get History
 ```
 $Get-History
 ```
@@ -27,6 +27,11 @@ Write-Host ("Hello-World")
 ### Command output / Console / log in a new line 
 ```
 Write-Host ("Hello `n World")
+```
+
+### Command output / Console / log with a colored output
+```
+Write-Host ("Hello World") -ForegroundColor Green
 ```
 
 ### Search for a Folder inside a dir 
@@ -92,3 +97,21 @@ ForEach ($Computer in $RemoteComputers)
 }
 ```
 
+##
+##
+## PowerShell User Response
+```
+$usrResponse = Read-Host " (y / n ) "
+Switch ($usrResponse)
+    {
+        y {
+            Write-host "Yes" 
+        }
+        n {
+            Write-Host "No"
+        }
+        Default {
+            Write-Host "Default"
+        }
+    }
+```    
