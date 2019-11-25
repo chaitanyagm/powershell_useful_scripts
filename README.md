@@ -1,6 +1,19 @@
 # Powershell Useful Commands
 
 ## PowerShell Frequently useful commands
+### Unblock, if running powershell scripts are blocked for current user
+```
+Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+```
+
+### Unblock, if running powershell scripts are blocked and you've admin access
+```
+Set-ExecutionPolicy Unrestricted
+```
+
+##
+##
+## PowerShell Frequently useful commands
 ### Get PowerShell Version
 ```
 Get-Host | Select-Object Version
@@ -9,6 +22,7 @@ or
 ```
 $PSVersionTable
 ```
+
 ### Get History
 ```
 $Get-History
