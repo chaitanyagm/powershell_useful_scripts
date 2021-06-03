@@ -37,6 +37,12 @@ Reference : Thanks to [this article](https://stackoverflow.com/a/41326064) from 
 $VerbosePreference="SilentlyContinue"
 ```
 
+### Ignore a termination error and continue PowerShell script
+Reference : Thanks to [this article](https://devblogs.microsoft.com/scripting/hey-scripting-guy-how-can-i-use-erroractionpreference-to-control-cmdlet-handling-of-errors/) is where I've got this command from
+```
+# Paste this on top of the script from where errors need to be ignored
+$ErrorActionPreference = "SilentlyContinue"
+```
 
 ### Get History
 ```
