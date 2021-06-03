@@ -23,6 +23,21 @@ or
 $PSVersionTable
 ```
 
+### Run a PowerShell script with verbose output
+Reference : Thanks to [this article](https://stackoverflow.com/a/41326064) from [this Stackoverflow page](https://stackoverflow.com/questions/41324882/how-to-run-a-powershell-script-with-verbose-output) is where I've got these commands from
+```
+# Paste this on top of the script that needs Verbose output
+$VerbosePreference="Continue"
+```
+
+### Remove verbose output from a PowerShell script 
+Reference : Thanks to [this article](https://stackoverflow.com/a/41326064) from [this Stackoverflow page](https://stackoverflow.com/questions/41324882/how-to-run-a-powershell-script-with-verbose-output) is where I've got these commands from
+```
+# Paste this on top of the script from where no Verbose output is needed
+$VerbosePreference="SilentlyContinue"
+```
+
+
 ### Get History
 ```
 $Get-History
